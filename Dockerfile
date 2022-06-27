@@ -7,6 +7,6 @@ COPY requirements.txt ./
 #install the requirements and Boston dynamics packages
 RUN pip install --no-cache-dir -r requirements.txt
 #copy the Example programs
-COPY /examples ./workspace/spot
+COPY /python ./workspace/spot
 #start bash
 ENTRYPOINT /bin/bash
